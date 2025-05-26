@@ -2,7 +2,6 @@ import random
 
 def check_guess(answer, number):
     if answer == number:
-        print("Congrats!\nYou are absolutely RIGHT.")
         return True
     elif number < answer:
         print("Too low.")
@@ -30,6 +29,7 @@ while chances:
     is_right = check_guess(computer_choice, guess)
     if is_right:
         chances = 0
+        print("Congrats!\nYou are absolutely RIGHT.")
     else:
         chances -= 1
         if chances != 0:
