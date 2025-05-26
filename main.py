@@ -1,3 +1,5 @@
+import random
+
 print("Welcome to the Number Guessing Game!")
 print("I'm thinking of a number between 1 and 100.")
 
@@ -8,4 +10,7 @@ if difficulty == "easy":
 elif difficulty == "hard":
     chances = 5
 
-print(chances)
+# print(chances)
+
+computer_choice = random.randint(1, 100)
+# print(computer_choice)
