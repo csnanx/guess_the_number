@@ -34,6 +34,12 @@ def guess_the_number():
         else:
             chances -= 1
             if chances != 0:
-                print("Guess again")
+                print("Guess again.")
 
     print(f"The right answer was: {computer_choice}")
+
+play_again = "yes"
+
+while play_again == "yes":
+    guess_the_number()
+    play_again = input("Do you want to play again? (yes/no): ").lower()
